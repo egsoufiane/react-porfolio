@@ -1,0 +1,113 @@
+header {
+    padding-top: 6rem;
+    overflow: hidden;
+}
+
+.header_container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.cta{
+    display:flex;
+    justify-content: center;
+
+}
+
+
+
+.header_pp {
+    border-radius: 12rem 12rem 0 0;
+    width: 22rem;
+    height: 30rem;
+    /*position: absolute;*/
+    left:calc(50% - 11rem);
+    overflow: hidden;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    background: var(--color-bg-varient);
+    transition: var(--transition);
+
+}
+
+.header_pp:hover{
+
+    background: var(--color-bg-2);
+    transform: scale(1.2);
+    transition: var(--transition);
+}
+
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    /*position: absolute;*/
+    position: fixed;
+    left: 2%;
+    /*bottom : 5rem;*/
+    bottom: 2%;
+        
+}
+
+a .social_icon { 
+    color: var(--color-black);
+    transition: var(--transition);
+}
+
+a .social_icon:hover{
+    transform: scale(1.2);
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+header a {
+    color: var(--color-dark);
+}
+
+
+.scroll_down {
+   
+    /*position: absolute;*/
+    position: fixed;
+    
+    right : 2rem;
+    /*bottom : 8rem;*/
+    bottom: 50%;
+    transform: rotate(90deg);
+    color: var(--color-dark);
+   
+    
+    
+
+}
+
+/* medi queries (MEDIUM WIDTH)*/
+@media screen and (max-width: 1024px){
+   /*.header{
+    height: 68vh;
+   }*/
+   .scroll_down{
+    display: none;
+   }
+
+}
+
+@media screen and (max-width: 600px){
+    /*
+    .header{
+        height: 100vh;
+    }*/
+
+    .header_socials{
+        display: none;
+    }
+   
+
+}

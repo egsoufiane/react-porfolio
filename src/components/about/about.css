@@ -1,0 +1,146 @@
+
+
+.about_container{
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+
+}
+
+.about_pp{
+    width:100%;  
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-bg-varient),
+        transparent
+
+    );
+    display: grid;
+    place-items: center;
+    margin: 1rem;
+    
+}
+
+.about_pp-image{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+    margin: 1rem 0.5rem;
+    background: var(--color-light);
+    
+}
+
+.about_pp-image:hover{
+    transform: rotate(0deg);
+    transition: var(--transition);
+}
+
+
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    
+}
+.about_card{
+  
+    background: var(--color-dark);
+    text-align: center;
+    border: 1px solid transparent ;
+    border-radius: 1rem;
+    padding: 1rem ;
+
+}
+
+.about_card:hover{
+    transition: var(--transition);
+    background: var(--color-white);
+    color: var(--color-dark);
+    cursor: default;
+   
+}
+
+.about_icon{
+    color: var(--color-bg-2 );
+    font-size: 1.4rem;
+}
+
+.about_card h5{
+    font-size: 0.95;
+}
+
+.about_card small{
+    font-size: 0.75rem;
+    color: var(--color-light)
+}
+
+
+.about_content p{
+    margin: 2rem 0 2.6rem;
+
+}
+
+
+
+@media screen and (max-width: 1024px){
+    
+    .container {
+        width: var(--container-width-md);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        
+       
+    }
+    section {
+        margin-bottom: 6rem;
+    }
+
+
+    .about_container{
+        display: grid;
+        grid-template-rows: 25% 50% ;
+        grid-template-columns: 60%;
+        justify-content: center;
+       
+     }
+
+}
+
+
+@media screen and (max-width: 600px){
+    .container {
+        width: var(--container-width-sm);
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+
+    .about_container{
+        
+        display: grid;
+        grid-template-rows: 25% 50% ;
+        grid-template-columns: 80%;
+        justify-content: center;
+    
+        /*padding-bottom: 2rem;*/
+
+     }
+    
+
+    
+    
+
+}
+

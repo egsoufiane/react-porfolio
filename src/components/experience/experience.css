@@ -1,0 +1,176 @@
+.container_experience{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+.card{
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    */
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    
+    
+}
+
+
+.front_end_card{
+    
+    background: var(--color-bg-3);
+    /*border: 1px solid var(--color-bg-2);*/
+}
+
+.back_end_card{
+    background: var(--color-bg-4);
+    /*border: 1px solid var(--color-bg-1);*/
+
+}
+
+
+
+
+.skill_card{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    
+    
+    transition: var(--transition);
+
+}
+
+.skill_card:hover{
+ 
+    color: var(--color-dark);
+    transform: scale(1.2);
+    transition: var(--transition);
+
+}
+
+
+
+
+/*
+.skill_card{
+    background: var(--color-dark);
+    border-radius: 1rem;
+    padding: 0.5rem
+}*/
+
+
+.card > h1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: var(--color-dark);
+}
+
+
+
+.skill_icon {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 2rem;
+    padding: 0.2rem;
+
+}
+
+
+.skill_card h2 {
+    grid-column-start: 2;
+}
+
+.skill_card h5{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+
+.back_end_card .skill_icon{
+    color: var(--color-bg-1);
+}
+
+.front_end_card .skill_icon{
+    color: var(--color-bg-2);
+}
+
+.skill_card > small{
+    grid-column-start:2;
+    color: var(--color-black);
+}
+
+@media screen and (max-width: 1024px){
+    /*
+    .container {
+        width: var(--container-width-md);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        
+       
+    }
+    section {
+        margin-bottom: 6rem;
+    }
+
+
+    .about_container{
+        display: grid;
+        grid-template-rows: 25% 50% ;
+        grid-template-columns: 60%;
+        justify-content: center;
+       
+     }*/
+     .container_experience{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+
+     }
+    
+
+}
+
+
+@media screen and (max-width: 600px){
+
+    .container {
+        width: var(--container-width-sm);
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+
+    .container_experience{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+
+     }
+    
+
+}
