@@ -1,6 +1,7 @@
 import React from "react";
 import './about.css';
 import PP from '../../assets/profile-picture1.png'
+import Avatar from '../../assets/2206.jpg'
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {VscFolderLibrary} from 'react-icons/vsc';
@@ -13,7 +14,7 @@ const About = () => {
 
             <div className="container about_container">
                 <div className="about_pp">
-                <img className="about_pp-image" src={PP} alt="about-pp"/>
+                <img className="about_pp-image" src={Avatar} alt="about-pp"/>
                 </div> 
 
                 <div className="about_content">
@@ -35,7 +36,7 @@ const About = () => {
                         </article> 
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facere eum, aliquam omnis, repellat perspiciatis nam asperiores laudantium dolores quibusdam qui sunt soluta blanditiis minima quas eligendi harum, ipsa maxime!</p>
-                    <a href="contact" className="btn btn-primary">Let's talk</a>
+                    <a href='#contact' className="btn btn-primary">Let's talk</a>
                 </div>
 
             </div>

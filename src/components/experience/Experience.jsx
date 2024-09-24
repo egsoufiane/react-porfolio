@@ -6,6 +6,7 @@ const Experience = () => {
     return (
         <section id='experience'>
             <h1>Skills</h1>
+            <div className="skewed_container">
             <div className="container container_experience">
             
                 <div className="card front_end_card">
@@ -84,6 +85,7 @@ const Experience = () => {
                         <small>Experienced</small>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     );

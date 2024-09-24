@@ -1,0 +1,33 @@
+.footer-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2rem;
+}
+
+.socials-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon-footer{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    color: var(--color-lights);
+}
+
+
+.back-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+
+.icon-container{
+    padding: 1rem;
+    background-color: var(--color);
+}
+

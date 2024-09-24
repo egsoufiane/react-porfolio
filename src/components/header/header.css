@@ -12,6 +12,12 @@ header {
     text-align: center;
     justify-content: center;
 
+    /* background-color: var(--color-white);
+    clip-path : polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%); */
+  
+    
+       
+    
 }
 
 .cta{
@@ -23,8 +29,8 @@ header {
 
 
 .header_pp {
-    border-radius: 12rem 12rem 0 0;
-    width: 22rem;
+    border-radius: 1rem;
+    width: 40rem;
     height: 30rem;
     /*position: absolute;*/
     left:calc(50% - 11rem);

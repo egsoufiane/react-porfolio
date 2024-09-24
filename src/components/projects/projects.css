@@ -1,19 +1,20 @@
 .container_projects{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
     text-align: center;
     
 }
 
-
+/*
 .project_name_container{
     background: var(--color-white);
     padding: 1rem;
     border-radius: 0 0 2rem 2rem;
     border: 1px solid var(--color-white)
 }
+*/
 
 /*
 .project_name{
@@ -27,15 +28,15 @@
     /* padding: 3rem; */
     margin: 1rem;
     padding-bottom: 2rem;
-    border: 1px solid var(--color-white);
-    border-radius: 0 0 2rem 2rem;
-    background: linear-gradient(
+    /* border: 1px solid var(--color-white);
+    border-radius: 0 0 2rem 2rem; */
+    /* background: linear-gradient(
         45deg,
         transparent,
         var(--color-bg-3),
         transparent
 
-    );
+    ); */
 
 }
 
@@ -49,6 +50,7 @@
 
 .container_image{
     margin: 3rem ;
+    float: right;
     
 }
 
@@ -85,7 +87,9 @@
 
 
 .container_project h1, h2{
-    color: var(--color-dark)
+    color: var(--color-dark);
+    font-weight: bold; 
+    
 }
 
 

@@ -1,5 +1,5 @@
 import './projects.css'
-import PI from '../../assets/project-image.png';
+import PI from '../../assets/project1.jpg';
 
 const Projects = () => {
     return(
@@ -9,7 +9,7 @@ const Projects = () => {
             <div className="container container_projects">
                 <div className="container_project">
                     <div className="project_name_container">
-                        <h2 className="project_name">Project 1</h2>
+                        <h2 className="project_name">PROJECT 1</h2>
                     </div>
                     <div className="container_image">
                         <img src={PI} alt='project-image' className="project_image"/>
@@ -18,29 +18,27 @@ const Projects = () => {
                     <h1>Technologies</h1>
                     <ul className="technologies_list">
                         <li>ReactJS</li>
-                        <li>ReactJS</li>
-                        <li>CSS</li>
+                        <li>Spring Boot</li>
                     </ul>
                     <a href="" className="btn ">Github</a>
                     <a href="" className="btn btn-primary">Live Demo</a>
                 </div>
                 <div className="container_project">
-                    <h2 className="project_name">Project 1</h2>
+                    <h2 className="project_name">PROJECT 1</h2>
                     <div className="container_image">
                         <img  src={PI} alt='project-image' className="project_image"/>
                     </div>
                     <article className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure modi non repellendus culpa esse totam, aliquid quod rem beatae nam sequi explicabo temporibus minus accusantium laudantium ipsam, quidem eveniet! Itaque!</article>
                     <h1>Technologies</h1>
                     <ul className="technologies_list">
-                        <li>ReactJS</li>
-                        <li>ReactJS</li>
-                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>FireBase</li>
                     </ul>
                     <a href="" className="btn ">Github</a>
                     <a href="" className="btn btn-primary">Live Demo</a>
                 </div>
                 <div className="container_project">
-                    <h2 className="project_name">Project 1</h2>
+                    <h2 className="project_name">PROJECT 3</h2>
                     <div className="container_image">
                         <img src={PI} alt='project-image' className="project_image"/>
                     </div>
@@ -48,7 +46,7 @@ const Projects = () => {
                     <h1>Technologies</h1>
                     <ul className="technologies_list">
                         <li>ReactJS</li>
-                        <li>ReactJS</li>
+                        <li>HTML</li>
                         <li>CSS</li>
                     </ul>
                     <a href="https://www.github.com" className="btn ">Github</a>

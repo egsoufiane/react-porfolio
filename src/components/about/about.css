@@ -3,15 +3,15 @@
 .about_container{
     padding-top: 6rem;
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: 40% 40%;
+    gap: 20%;
 
 }
 
 .about_pp{
     width:100%;  
     aspect-ratio: 1/1;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background: linear-gradient(
         45deg,
         transparent,
@@ -26,7 +26,9 @@
 }
 
 .about_pp-image{
-    border-radius: 2rem;
+    //border-radius: 2rem;
+    border-radius: 1rem;
+    
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);

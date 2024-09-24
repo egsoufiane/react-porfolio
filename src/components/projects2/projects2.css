@@ -1,0 +1,130 @@
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.projects-intro {
+  margin-top: 20rem;
+  margin-bottom: 3rem;
+  color: var(--color-white);
+
+}
+  
+  .projects {
+ 
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(3, auto);
+    gap: 3%;
+    padding: 3rem;
+    margin-bottom: 7rem;
+    /* background-image: var(--section-background-color); */
+
+  } 
+  
+
+
+  .card-project {
+
+    display: grid;
+    grid-template-rows: 80% 10%; /* Two rows */
+    grid-template-columns: 1fr;
+    gap: 10%; /* Optional: space between rows */
+    /* background: #fff; */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+    background-color: transparent;
+    opacity: 0.9 !important;
+    border-style: hidden;
+    padding: 3rem;
+
+  }
+
+
+  .card-project > div:first-child {
+    grid-row: 1;  /*First row*/
+    margin-bottom: 0.2rem;
+    padding: 0.2rem;
+  
+  }
+  
+  .card-project > div:last-child {
+    grid-row: 2; /*Second row*/
+    display: flex; /* Optional: to place buttons horizontally */
+    justify-content: center;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+  
+  }
+  
+  .card-project img {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .card-project h3 {
+    font-size: 1.2em;
+    margin-bo: 0.5em 0;
+    color: var(--color-white);
+  }
+  
+  .card-project p {
+    padding: 0 1em 1em;
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  .card-project:hover {
+  transform: scale(1.05);
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  }
+
+  .buttons{
+    margin: 0.3rem;
+    padding: 0.3rem;
+    
+    justify-content: center; /* Centers buttons horizontally within the row */
+    margin: 1rem; /* Adds space between content and buttons */
+    
+  }
+
+
+
+  .buttons > button:first-child {
+    padding:1rem; 
+
+  }
+
+  .buttons > button:last-child {
+    padding:1rem;
+
+  }
+
+  @media screen and (max-width: 1024px){
+ 
+    .projects{
+      grid-template-columns: repeat(2,auto);
+      gap: 3%;
+     
+    }
+ 
+ }
+ 
+ @media screen and (max-width: 600px){
+   
+     .projects{
+      grid-template-columns: 1fr;
+      gap: 3%;
+     
+    }
+ 
+ }

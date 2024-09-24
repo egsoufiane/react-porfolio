@@ -2,8 +2,11 @@
 import './header.css';
 import CTA from './CTA';
 import PP from '../../assets/profile-picture2.png';
+import Avatar from '../../assets/CSA.jpg';
 import Socials from './Socials';
 import React, { useState } from "react";
+import Type from './Type'
+
 
 
 /*
@@ -72,10 +75,12 @@ const Header = () => {
             <div className="container header_container">
                 <h5>Hello I'm</h5>
                 <h1>Soufiane EL GAAMOUSS</h1>
-                <h5 className="text-dark">FullStack Developper</h5>
+                <div style={{ padding: 50, textAlign: "left", fontWeight: 'bold' }}>
+                <Type/>
+              </div>
                 <CTA/>
                 <div className="container-header-pp">
-                    <img className="header_pp" src={PP} alt='profile picture'/>
+                    <img className="header_pp" src={Avatar} alt='profile picture'/>
                 </div>
                 <Socials/>
                 <a href={link} onClick={handleClick} className="scroll_down">Scroll down</a>   
